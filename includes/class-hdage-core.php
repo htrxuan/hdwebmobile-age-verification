@@ -64,7 +64,7 @@ final class HDAGE_Core
         ?>
         <div class="notice notice-error is-dismissible">
             <p>
-                <?php esc_html_e('HDWebmobile Age Verification Gate requires WooCommerce to be installed and active. The plugin has been deactivated.', 'hdwebmobile-age-verification'); ?>
+                <?php esc_html_e('HDWebmobile Age Verification requires WooCommerce to be installed and active. The plugin has been deactivated.', 'hdwebmobile-age-verification'); ?>
             </p>
         </div>
         <?php

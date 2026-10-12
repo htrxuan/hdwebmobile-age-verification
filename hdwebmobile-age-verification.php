@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: HDWebmobile Age Verification Gate
+ * Plugin Name: HDWebmobile Age Verification
  * Plugin URI: https://hdwebmobile.com/plugins/hdwebmobile-age-verification/
  * Description: Age verification for restricted product categories, held server-side and re-checked at checkout, never trusted from a cookie.
  * Version: 1.0.0

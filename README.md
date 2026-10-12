@@ -1,4 +1,4 @@
-# HDWebmobile Age Verification Gate
+# HDWebmobile Age Verification
 
 Age verification for restricted product categories, held server-side and re-checked at checkout, never trusted from a cookie.
 

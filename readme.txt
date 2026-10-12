@@ -1,4 +1,4 @@
-=== HDWebmobile Age Verification Gate ===
+=== HDWebmobile Age Verification ===
 Contributors: htrxuan
 Donate link: https://paypal.me/htrxuan/20
 Tags: woocommerce, age verification, age gate, restricted products, compliance
@@ -14,10 +14,10 @@ Age verification for restricted product categories, held server-side and re-chec
 
 == Description ==
 
-HDWebmobile Age Verification Gate requires a shopper to confirm their age before they can buy anything in the product categories you choose. Confirmation is remembered for the rest of their visit.
+HDWebmobile Age Verification requires a shopper to confirm their age before they can buy anything in the product categories you choose. Confirmation is remembered for the rest of their visit.
 
-= Why this plugin exists =
-Several competing "Age Verification for WooCommerce" plugins stored the verified/not-verified flag in a plain, unsigned cookie the visitor's own browser held, with no server-side re-check at add-to-cart or checkout (CWE-602, Client-Side Enforcement of Server-Side Security). A shopper could simply set that cookie in their browser's devtools and buy age-restricted products having confirmed nothing at all.
+= Security by design =
+A common weakness in age-gate tools is storing the verified/not-verified flag in a plain, unsigned cookie held by the visitor's own browser, with no server-side re-check at add-to-cart or checkout (CWE-602, Client-Side Enforcement of Server-Side Security). A shopper could simply set that cookie in their browser's devtools and buy age-restricted products having confirmed nothing at all.
 
 This plugin never has a client-controlled flag to forge in the first place:
 
