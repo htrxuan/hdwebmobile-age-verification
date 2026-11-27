@@ -12,7 +12,7 @@ Requires a shopper to confirm their age before they can buy anything in the prod
 
 ## Why this plugin exists
 
-Several competing "Age Verification for WooCommerce" plugins stored the verified/not-verified flag in a plain, unsigned cookie the visitor's own browser held, with no server-side re-check at add-to-cart or checkout (CWE-602, Client-Side Enforcement of Server-Side Security). A shopper could simply set that cookie in their browser's devtools and buy age-restricted products having confirmed nothing at all.
+A common flaw in age-verification plugins: storing the verified/not-verified flag in a plain, unsigned cookie the visitor's own browser holds, with no server-side re-check at add-to-cart or checkout (CWE-602, Client-Side Enforcement of Server-Side Security). A shopper could simply set that cookie in their browser's devtools and buy age-restricted products having confirmed nothing at all.
 
 This plugin never has a client-controlled flag to forge in the first place:
 

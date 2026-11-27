@@ -10,12 +10,12 @@ if (!defined('ABSPATH')) {
  * Settings, category-restriction lookup, and the ONLY place verification state is ever read
  * or written.
  *
- * Several competing "Age Verification for WooCommerce" plugins stored the verified/
- * not-verified flag in a plain, unsigned cookie the visitor's own browser held (e.g.
- * `age_verified=1`), with no server-side re-check at add-to-cart or checkout (CWE-602,
- * Client-Side Enforcement of Server-Side Security). A shopper could set that cookie directly
- * in their browser's devtools -- or an automated script could just send it with every request
- * -- and buy age-restricted products having confirmed nothing at all.
+ * The risk this guards against: storing the verified/not-verified flag in a plain, unsigned
+ * cookie the visitor's own browser holds (e.g. `age_verified=1`), with no server-side
+ * re-check at add-to-cart or checkout (CWE-602, Client-Side Enforcement of Server-Side
+ * Security). A shopper could set that cookie directly in their browser's devtools -- or a
+ * script could send it with every request -- and buy age-restricted products having confirmed
+ * nothing at all.
  *
  * This plugin never has a client-controlled flag to forge in the first place: verification
  * state lives only in `WC()->session`, WooCommerce's own server-side session store (a
